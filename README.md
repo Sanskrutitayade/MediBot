@@ -52,20 +52,31 @@ Visit http://localhost:3000 in your browser to use the app.
 
 ## Project Structure
 
+```
 MediBot/
-├── app.py                  # Main Flask app
-├── classes/                # Core logic for User, Food, Report
-├── dataset/                # CSV files for training data
-├── model/                  # Saved ML models (.joblib)
-├── notebook/               # Jupyter notebook for model training
-├── templates/              # HTML templates
-├── static/                 # CSS, images, and assets
-└── database.db             # SQLite database
+├── app.py
+├── classes/
+│   ├── User.py
+│   ├── Food.py
+│   └── Report.py
+├── dataset/
+│   └── training_data.csv
+├── model/
+│   └── random_forest.joblib
+├── notebook/
+│   └── Disease-Prediction.ipynb
+├── templates/
+├── static/
+│   └── Images/
+│       └── sanskruti.jpg
+├── user_reports/
+└── database.db
+```
 
 ---
 
 ## About the Creator
 Sanskruti Tayade
-```AI/ML Developer based in Pune, India```
+AI/ML Developer based in Pune, India
 
 This project was designed, developed, and tested independently to apply machine learning in a meaningful domain. I focused not just on the accuracy of prediction, but also on user interaction, explainability, and practical health guidance.
