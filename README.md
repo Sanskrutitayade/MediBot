@@ -1,50 +1,68 @@
-# 🧠 MediBot – AI Health Assistant
+# MediBot – An AI-Powered Health Assistant
 
-**MediBot** is a solo-developed, AI-powered health assistant that predicts diseases from symptoms using machine learning. It features a chatbot interface, BMI and calorie tracking, symptom matching via NLP, and auto-generated health reports.
+**MediBot** is a web-based application that predicts possible diseases based on user-input symptoms using a machine learning model trained on real-world data. The system also includes tools for tracking BMI, estimating daily calorie needs, and generating personalized health reports.
 
----
-
-## 🔍 Features
-
-- 🤖 Chatbot-based symptom input
-- 📊 Disease prediction with Random Forest
-- 🔎 NLP-based fuzzy symptom matching
-- 🧍‍♀️ BMI & BMR calculator with calorie goals
-- 📄 Health report generator (.txt)
-- 🌐 Live medical info from DuckDuckGo
-- 🔐 User login & registration (SQLite)
+This project was developed end-to-end by **Sanskruti Tayade** as a practical exploration of applied machine learning in healthcare.
 
 ---
 
-## ⚙️ Tech Stack
+## Features
 
-- **Backend**: Python, Flask, SQLAlchemy
-- **ML**: scikit-learn, Pandas, joblib
-- **NLP**: CountVectorizer, Cosine Similarity
-- **Frontend**: HTML, CSS, Jinja2 Templates
+- **Symptom-based Disease Prediction** using Random Forest
+- **Chatbot Interface** for guided user input
+- **NLP-based Symptom Matching** with Cosine Similarity
+- **BMI & Calorie Estimation** based on user profile
+- **Health Report Generation** in plain text format
+- **Live Medical Info** fetched via DuckDuckGo search
+- **User Registration & Login** with SQLite database
+
+---
+
+## Technologies Used
+
+- **Programming Language**: Python  
+- **Framework**: Flask  
+- **Machine Learning**: scikit-learn, Pandas, joblib  
+- **Natural Language Processing**: CountVectorizer, Cosine Similarity  
+- **Frontend**: HTML, CSS, Jinja2 Templates  
 - **Database**: SQLite
 
 ---
 
-## 🚀 Getting Started
+## Setup Instructions
 
+1. **Clone the repository**
 ```bash
 git clone https://github.com/YOUR_USERNAME/MediBot.git
 cd MediBot
+
+Install the required packages
+
+bash
+Copy code
 pip install -r requirements.txt
+Run the application
+
+bash
+Copy code
 python app.py
-Visit: http://localhost:3000
+Visit http://localhost:3000 in your browser to use the app.
 
+Project Structure
+php
+Copy code
 MediBot/
-├── app.py
-├── classes/
-├── dataset/
-├── model/
-├── notebook/
-├── templates/
-├── static/
-└── database.db
+├── app.py                  # Main Flask app
+├── classes/                # Core logic for User, Food, Report
+├── dataset/                # CSV files for training data
+├── model/                  # Saved ML models (.joblib)
+├── notebook/               # Jupyter notebook for model training
+├── templates/              # HTML templates
+├── static/                 # CSS, images, and assets
+└── database.db             # SQLite database
 
-👩‍💻 Author
+About the Creator
 Sanskruti Tayade
-AI/ML Developer
+AI/ML Developer based in Pune, India
+
+This project was designed, developed, and tested independently to apply machine learning in a meaningful domain. I focused not just on the accuracy of prediction, but also on user interaction, explainability, and practical health guidance.
