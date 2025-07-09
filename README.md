@@ -35,22 +35,23 @@ This project was developed end-to-end by **Sanskruti Tayade** as a practical exp
 ```bash
 git clone https://github.com/YOUR_USERNAME/MediBot.git
 cd MediBot
+```
 
 Install the required packages
 
-bash
-Copy code
+```bash
 pip install -r requirements.txt
 Run the application
+```
 
-bash
-Copy code
+```bash
 python app.py
 Visit http://localhost:3000 in your browser to use the app.
+```
+---
 
-Project Structure
-php
-Copy code
+## Project Structure
+
 MediBot/
 ├── app.py                  # Main Flask app
 ├── classes/                # Core logic for User, Food, Report
@@ -61,8 +62,10 @@ MediBot/
 ├── static/                 # CSS, images, and assets
 └── database.db             # SQLite database
 
-About the Creator
+---
+
+## About the Creator
 Sanskruti Tayade
-AI/ML Developer based in Pune, India
+```AI/ML Developer based in Pune, India```
 
 This project was designed, developed, and tested independently to apply machine learning in a meaningful domain. I focused not just on the accuracy of prediction, but also on user interaction, explainability, and practical health guidance.
